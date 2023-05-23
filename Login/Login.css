@@ -1,0 +1,54 @@
+:root{
+    --dark-coller: #19283f;
+    --gren-coller:#33d1cc;
+    --red-coller:#ff3150;
+    --yello-coller:#ffc400;
+    --section-coller:#eff7fa;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .main-btn{
+    background-color: var(--red-coller);
+    color: var(--yello-coller);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: none;
+}
+.main-btn:hover{
+  color:#ddb327 ;
+  background-color: var(--red-coller);
+}
+  
+  .login-box {
+    width: 350px;
+    height: 380px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background-color: #f7f5f5;
+  }
+  
+  .login-box h2 {
+    color: var(--yello-coller);
+  }
+  
+  .login-box input[type="email"],
+  .login-box input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+  }
+  
+ .login-box p span{
+    color: var(--gren-coller);
+  }
+  

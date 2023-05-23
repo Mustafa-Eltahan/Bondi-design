@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/all.min.css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet" />
+    <title>Login</title>
+</head>
+<body style="background-color: #19283f;">
+    <div class="login-box text-center ">
+        <h2 class="fs-2 fw-bold text-center mt-3">Login</h2>
+        <form id="login-form"   class="mt-3 " >
+          <input class="rounded-pill w-100 mb-4 mt-4" id="email" type="email"  placeholder="Email" required>
+          <input class="rounded-pill w-100 mb-4" id="password" type="password" minlength="8"  placeholder="Password" required>
+          <input  class="w-100 rounded-pill  main-btn " type="submit" value="Login">
+        </form>
+        <a class="text-decoration-none fs-6 text-black-50 " href="#">Forget Passwerd?</a>
+        <p class="text-black-50 fs-6 pt-1 ">Havn't acount?<a class="text-decoration-none fs-6" href="file:///D:/Web_Projects/Bondi/SignUp/SignUp.html" ><span>SinUp</span></a></p>
+      </div>
+
+      <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+          event.preventDefault();
+            alert("Login successful!");
+            window.location.href = "file:///D:/Web_Projects/Bondi/index.html";
+        });
+      </script>
+</body>
+</html>

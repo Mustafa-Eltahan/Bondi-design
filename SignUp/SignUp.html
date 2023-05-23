@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="SignUp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet" />
+    <title>Register</title>
+</head>
+
+<body style="background-color:#19283f ">
+
+        <div class="login-box text-center ">
+
+            <form id="sign-form" class="mt-4 " >
+               <input class="rounded-pill w-100  mb-4 " type="text" id="fName" placeholder="Frist Name" required>
+               <input class="rounded-pill w-100 mb-4 " type="text" id="LName" placeholder="Last Name" required>
+              <input class="rounded-pill w-100 mb-4" id="email" type="email"  placeholder="Email" required>
+              <input class="rounded-pill w-100 mb-4"  type="tel" id="phone" placeholder="Phone Number" required minlength="11" maxlength="11">
+              <input class="rounded-pill w-100 mb-4" id="password" type="password" minlength="8"  placeholder="Password" required>
+              <input class="rounded-pill w-100 mb-4"  type="password" id="confirm" placeholder="Confirm Password" required minlength="8">
+              <input class="main-btn w-100 rounded-pill " type="submit" onclick="signUp()" value="SignUp">
+              <p class="text-black-50 mt-2">Have account? <a class="text-decoration-none"
+                href="file:///D:/Web_Projects/Bondi/Login/login.html">Login</a></p>
+            </form>
+    </div>
+    </div>
+
+    <script>
+        function signUp() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var confirm = document.getElementById("confirm").value;
+
+            if (!password || !email || !confirm) {
+                alert("Please fill in all fields");
+                return;
+            }
+
+            if (password === confirm) {
+                alert("SignUp Successful");
+                window.location.href = "file:///D:/Web_Projects/Bondi/index.html";
+            }
+            else {
+             alert("Failed, Password and confirm password must be the same");
+              return;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+:root {
+  --dark-coller: #19283f;
+  --gren-coller: #33d1cc;
+  --red-coller: #ff3150;
+  --yello-coller: #ffc400;
+  --section-coller: #eff7fa;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-btn {
+  background-color: var(--red-coller);
+  color: var(--yello-coller);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.login-box {
+  width: 400px;
+  height: 520px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  background-color:#ebeaea ;
+}
+
+.sign-form {
+  width: 25%;
+  margin-left: 20%;
+
+}
+
+.login-box form input{
+  padding: 8px;
+  outline: none;
+  border: none;
+  height: 40px;
+}
+a {
+  text-decoration: none;
+  color: rgb(40, 196, 196);
+}
+::placeholder{
+  padding: 5px;
+  font-size: small;
+}
