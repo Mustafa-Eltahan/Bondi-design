@@ -13,7 +13,7 @@
     <title>Register</title>
 </head>
 
-<body style="background-color:#19283f ">
+<body style="background-color:#19283f" onload="emptyInput()">
 
         <div class="login-box text-center ">
 
@@ -51,6 +51,14 @@
               return;
             }
         }
+        function emptyInput() {
+            document.getElementById("fName").value = "";
+            document.getElementById("LName").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("phone").value = "";
+            document.getElementById("confirm").value = "";
+            document.getElementById("password").value = "";
+        };
     </script>
 </body>
 

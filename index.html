@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet" />
     <title>Login</title>
 </head>
-<body style="background-color: #19283f;">
+<body style="background-color: #19283f;" onload="emptyInput()">
     <div class="login-box text-center ">
         <h2 class="fs-2 fw-bold text-center mt-3">Login</h2>
         <form id="login-form"   class="mt-3 " >
@@ -30,6 +30,12 @@
             alert("Login successful!");
             window.location.href = "main.html";
         });
+
+        function emptyInput() {
+            document.getElementById("email").value = "";
+            document.getElementById("password").value = "";
+        };
+
       </script>
 </body>
 </html>
